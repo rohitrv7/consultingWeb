@@ -21,6 +21,7 @@ body{
     position: relative;
     flex-direction: column;
     justify-content: center;
+    line-height: -10vh;
     align-items: center;
 }
 h1{
@@ -42,7 +43,7 @@ h1{
 }
 span{
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 5vw;
     color: #ffffff;
 }
 .link{
@@ -57,10 +58,10 @@ h2{
 }
 a{
     position: relative;
-    cursor: nono;
+    cursor: none;
     padding: 10px 20px;
     color: #fff;
-    font-size: 1.2rem;
+    /* font-size: ; */
     text-decoration: none;
     z-index: 20;
 }
