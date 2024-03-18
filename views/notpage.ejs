@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../stylesheets/notpage.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Sorry &#128542;</h2>
+        <div class="cursor"></div>
+        <h1>404</h1>
+        <span>Page not found !</span>
+        <div class="link">
+            <a href="/">Back to Home Page</a>
+        </div>
+    </div>
+    <script>
+        let cursor = document.querySelector(".cursor");
+        let body = document.querySelector("body");
+        body.addEventListener("mousemove",  (e) => {
+            cursor.style.left = e.clientX +"px"
+            cursor.style.top = e.clientY +"px"
+        })
+    </script>
+</body>
+</html>
