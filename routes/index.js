@@ -18,6 +18,9 @@ router.get('/services', function(req, res, next){
 router.get('/contact', function(req, res, next){
   res.render('notpage')
 });
+router.get('/thanks', function(req, res, next){
+  res.render('notpage')
+});
 
 
 router.post('/', (req,res,next)=>{
