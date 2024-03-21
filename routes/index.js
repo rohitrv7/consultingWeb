@@ -18,16 +18,22 @@ router.get('/services', function(req, res, next){
 router.get('/contact', function(req, res, next){
   res.render('notpage')
 });
+router.post('/', function(req, res, next){
+  const { fullname, email, mobileno, message } = req.body;
+  const userData = new userModel({ fullname, email, mobileno, message });
+  let createUser = userModel.create(userData);
+  res.render('notpage');
+});
 router.get('/thanks', function(req, res, next){
   res.render('notpage')
-});
-
-
-router.post('/', (req,res,next)=>{
-  const { fullname, email, mobileno, subject, message } = req.body;
-  const userData = new userModel({ fullname, email, mobileno, subject, message });
-  let createUser = userModel.create(userData);
-  res.render('thanks');
 })
+
+
+// router.post('/', (req,res,next)=>{
+//   const { fullname, email, mobileno, subject, message } = req.body;
+//   const userData = new userModel({ fullname, email, mobileno, subject, message });
+//   let createUser = userModel.create(userData);
+//   res.render('thanks');
+// })
 
 module.exports = router;

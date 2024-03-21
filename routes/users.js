@@ -17,9 +17,6 @@ const userSchema = new mongoose.Schema({
     type: Number,
     require: true
   },
-  subject :{
-    type: String
-  },
   message: {
     type: String
   },
